@@ -1,1 +1,17 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
+
+// text colors
+$red: #f52828;
+$blueLight: #cee1f0;
+$blueDark: #607990; 
+$purple: #6f6c94;
+$green: #607B6B;
+
+:root {
+    --red: #f52828;
+    --blueLight: #cee1f0;
+    --blueDark: #607990; 
+    --purple: #6f6c94;
+    --green: #607B6B;
+    --primary: #000;
+}

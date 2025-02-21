@@ -1,0 +1,31 @@
+.button {
+    border: none;
+    padding: 0.75em 1.15em;
+}
+
+.button--bg-red {
+  background-color: var(--red);
+}
+
+.button--bg-blue-light {
+    background-color: var(--blueLight);
+}
+
+.button--bg-blue-dark {
+    background-color: var(--blueDark);
+}
+
+.button--bg-purple {
+  background-color: var(--purple);
+}
+
+.button--bg-green {
+ background-color: var(--green);
+}
+
+.button--hamburger {
+  background: none;
+  padding: 0;
+  font-size: 2em;
+  display: flex;
+}
