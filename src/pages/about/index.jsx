@@ -1,11 +1,13 @@
 import React from "react";
 import AboutHero from "./AboutHero";
 import PostFeedHero from "./PostFeedHero";
+import PostFeedBlog from "./PostFeedBlog";
 export default function index() {
   return (
     <>
       <AboutHero />
       <PostFeedHero />
+      <PostFeedBlog />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import ButtonSolid from './ButtonSolid'
 import ButtonHamburger from './ButtonHamburger';
 import ButtonOutline from './ButtonOutline';
-export { ButtonSolid, ButtonHamburger, ButtonOutline };
+import ButtonCircle from './ButtonCircle';
+export { ButtonSolid, ButtonHamburger, ButtonOutline, ButtonCircle };

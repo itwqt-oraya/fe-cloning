@@ -3,6 +3,49 @@ import { HeroContainer, HeroCol } from "../../components/Hero";
 import { Nav, TabContent, TabPane } from "reactstrap";
 import { ButtonSolid, ButtonOutline } from "../../components/Buttons";
 import { PostMobile } from "../../components/PostFeed";
+
+export default function PostFeedHero() {
+  const [activeTab, setActiveTab] = useState(1);
+
+  return (
+    <>
+      <HeroContainer>
+        <HeroCol className={"d-none d-md-block"}>
+          <img src="https://about.flipboard.com/wp-content/uploads/2022/12/Discover-Background-490x830.png" />
+        </HeroCol>
+
+        <HeroCol className={"d-lg-none"}>
+          <PostMobile />
+        </HeroCol>
+
+        <HeroCol className="p-5 my-auto">
+          <Nav>
+            {postFeedText.map((item) => (
+              <ButtonOutline key={item.key}>
+                <a onClick={() => setActiveTab(item.key)}>{item.buttonText}</a>
+              </ButtonOutline>
+            ))}
+
+            <TabContent activeTab={activeTab}>
+              {postFeedText.map((item) => (
+                <TabPane tabId={item.key} key={item.key}>
+                  <h1
+                    className="fw-bolder display-3 text-uppercase"
+                    dangerouslySetInnerHTML={{ __html: item.header }}
+                  />
+                  <p>{item.body}</p>
+                </TabPane>
+              ))}
+            </TabContent>
+          </Nav>
+
+          <ButtonSolid color={"purple"}>Dive Deeper</ButtonSolid>
+        </HeroCol>
+      </HeroContainer>
+    </>
+  );
+}
+
 const postFeedText = [
   {
     key: 1,
@@ -29,43 +72,3 @@ const postFeedText = [
     body: "Build your community by sharing stories with others on Flipboard. Personalize your profile, collect the stories into Flipboard Magazines, post comments and share ideas with people who share your passions.",
   },
 ];
-
-export default function PostFeedHero() {
-  const [activeTab, setActiveTab] = useState(1);
-
-  return (
-    <HeroContainer>
-      <HeroCol className={"d-none d-md-block"}>
-        <img src="https://about.flipboard.com/wp-content/uploads/2022/12/Discover-Background-490x830.png" />
-      </HeroCol>
-
-      <HeroCol className={"d-lg-none"}>
-        <PostMobile />
-      </HeroCol>
-
-      <HeroCol>
-        <Nav>
-          {postFeedText.map((item) => (
-            <ButtonOutline key={item.key}>
-              <a onClick={() => setActiveTab(item.key)}>{item.buttonText}</a>
-            </ButtonOutline>
-          ))}
-
-          <TabContent activeTab={activeTab}>
-            {postFeedText.map((item) => (
-              <TabPane tabId={item.key} key={item.key}>
-                <h1
-                  className="fw-bolder display-3 text-uppercase"
-                  dangerouslySetInnerHTML={{ __html: item.header }}
-                />
-                <p>{item.body}</p>
-              </TabPane>
-            ))}
-          </TabContent>
-        </Nav>
-
-        <ButtonSolid color={"purple"}>Dive Deeper</ButtonSolid>
-      </HeroCol>
-    </HeroContainer>
-  );
-}

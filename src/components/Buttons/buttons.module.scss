@@ -45,3 +45,22 @@
   border-color: var(--darkPrimary);
   transition: border-color 1s ease;
 }
+
+.button--circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 1.25em;
+  width: 2em;
+  height: 2em;
+  border: 1px solid #cccccc;
+  border-radius: 100%;
+  color: #b2b2b2;
+  font-weight: 700;
+}
+
+.button--circle:hover {
+  border-color: var(--darkPrimary);
+  transition: border-color 1s ease;
+}

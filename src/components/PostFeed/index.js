@@ -1,3 +1,3 @@
 import PostMobile from "./PostMobile";
-
-export { PostMobile }
+import PostBlog from './PostBlog'
+export { PostMobile, PostBlog }
