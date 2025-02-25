@@ -5,6 +5,7 @@ import {
   FooterInactiveLink,
   FooterSubLink,
   FooterContainer,
+  FooterButtons,
 } from "../../components/Footer";
 export default function Footer() {
   return (
@@ -23,6 +24,7 @@ export default function Footer() {
         </div>
 
         <FooterSubLink />
+        <FooterButtons />
         <p className="text-white">© Copyright 2025 Flipboard Inc.</p>
       </div>
     </FooterContainer>
