@@ -2,7 +2,7 @@ import React from "react";
 import { ButtonOutline, ButtonImage } from "../Buttons";
 export default function FooterButtons() {
   return (
-    <div>
+    <div className="d-flex flex-column flex-lg-row justify-content-start gap-3">
       <ButtonImage>
         <img src="https://about.flipboard.com/wp-content/themes/flipboard/dist/img/app-store-light.svg" />
       </ButtonImage>
