@@ -1,4 +1,4 @@
-import styles from "./hero.module.css";
+import styles from "./hero.module.scss";
 import classNames from "classnames";
 import React from "react";
 

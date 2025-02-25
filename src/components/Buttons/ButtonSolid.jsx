@@ -12,22 +12,28 @@ ButtonSolid.propTypes = {
     "green",
     "gray",
   ]).isRequired,
-  text: PropTypes.string.isRequired,
+  children: PropTypes.node,
+  props: PropTypes.shape({
+    color: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
-export default function ButtonSolid(props) {
-  const { color, text } = props;
+export default function ButtonSolid({ children, color, ...props }) {
   return (
     <Button
-      className={classNames(styles["button"], {
-        [styles["button--bg-red"]]: color === "red",
-        [styles["button--bg-blue-light"]]: color === "blueLight",
-        [styles["button--bg-blue-dark"]]: color === "blueDark",
-        [styles["button--bg-purple"]]: color === "purple",
-        [styles["button--bg-green"]]: color === "green",
-      })}
+      className={classNames(
+        styles["button"],
+        {
+          [styles["button--bg-red"]]: color === "red",
+          [styles["button--bg-blue-light"]]: color === "blueLight",
+          [styles["button--bg-blue-dark"]]: color === "blueDark",
+          [styles["button--bg-purple"]]: color === "purple",
+          [styles["button--bg-green"]]: color === "green",
+        },
+        "fw-bold"
+      )}
     >
-      {text}
+      {children}
     </Button>
   );
 }

@@ -29,3 +29,18 @@
   font-size: 2em;
   display: flex;
 }
+
+.button--outline {
+  background-color: transparent;
+  padding: 0.75em 1.15em;
+  border: 2px solid #cccccc;
+  color: #b2b2b2;
+  margin-right: 0.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.button--outline:hover {
+  border-color: var(--darkPrimary);
+  transition: border-color 1s ease;
+}

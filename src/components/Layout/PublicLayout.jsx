@@ -12,7 +12,7 @@ export default function PublicLayout() {
           <NavHamburger />
           <NavLogo />
           <NavLinks />
-          <ButtonSolid color={"red"} text={"Try Flipboard"} />
+          <ButtonSolid color={"red"}>Try Flipboard</ButtonSolid>
         </NavBar>
         <Outlet />
       </div>

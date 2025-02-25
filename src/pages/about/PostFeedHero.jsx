@@ -1,6 +1,7 @@
-import React from "react";
-import { HeroContainer, HeroSubHeaderText } from "../../components/Hero";
+import React, { useState } from "react";
+import { HeroContainer, HeroCol } from "../../components/Hero";
 import { Nav, NavItem, NavLink, TabContent, TabPane } from "reactstrap";
+import { ButtonSolid, ButtonOutline } from "../../components/Buttons";
 
 const postFeedText = [
   {
@@ -30,26 +31,34 @@ const postFeedText = [
 ];
 
 export default function PostFeedHero() {
+  const [activeTab, setActiveTab] = useState(1);
+
   return (
     <HeroContainer>
-      <Nav tabs>
-        {postFeedText.map((item) => (
-          <NavItem key={item.key}>
-            <NavLink href="#" className="text-dark">
-              <h2 className="fw-bold">{item.buttonText}</h2>
-            </NavLink>
-          </NavItem>
-        ))}
+      <HeroCol>
+        <img src="https://about.flipboard.com/wp-content/uploads/2022/12/Discover-Background-490x830.png" />
+      </HeroCol>
 
-        <TabContent activeTab="1">
+      <HeroCol>
+        <Nav>
           {postFeedText.map((item) => (
-            <TabPane tabId={item.key} key={item.key}>
-              <h2 className="fw-bold">{item.header}</h2>
-              <p>{item.body}</p>
-            </TabPane>
+            <ButtonOutline key={item.key}>
+              <a onClick={() => setActiveTab(item.key)}>{item.buttonText}</a>
+            </ButtonOutline>
           ))}
-        </TabContent>
-      </Nav>
+
+          <TabContent activeTab={activeTab}>
+            {postFeedText.map((item) => (
+              <TabPane tabId={item.key} key={item.key}>
+                <h2 className="fw-bold">{item.header}</h2>
+                <p>{item.body}</p>
+              </TabPane>
+            ))}
+          </TabContent>
+        </Nav>
+
+        <ButtonSolid color={"purple"}>Dive Deeper</ButtonSolid>
+      </HeroCol>
     </HeroContainer>
   );
 }
