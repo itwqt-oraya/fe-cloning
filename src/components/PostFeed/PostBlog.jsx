@@ -16,34 +16,36 @@ export default function PostBlog() {
 
       <div
         className={classNames(
-          "d-flex flex-nowrap gap-4 overflow-x-scroll",
+          "d-flex flex-nowrap gap-4",
           styles["post-container"]
         )}
       >
-        {feedBlog.map((blog) => (
-          <article
-            key={blog.key}
-            className={classNames(
-              "d-flex flex-column bg-white rounded p-5",
-              styles["post-body"]
-            )}
-          >
-            <div>
-              <p className="mb-2 fw-bold text-end text-muted">{blog.date}</p>
-              <img
-                className={classNames(styles["post-image"], "mb-3")}
-                alt="Sample"
-                src={blog.imageUrl}
-              />
-              <h4>{blog.title}</h4>
-            </div>
+        <div className="d-flex gap-4 flex-nowrap overflow-auto">
+          {feedBlog.map((blog) => (
+            <article
+              key={blog.key}
+              className={classNames(
+                "d-flex flex-column bg-white rounded p-5",
+                styles["post-body"]
+              )}
+            >
+              <div>
+                <p className="mb-2 fw-bold text-end text-muted">{blog.date}</p>
+                <img
+                  className={classNames(styles["post-image"], "mb-3")}
+                  alt="Sample"
+                  src={blog.imageUrl}
+                />
+                <h4>{blog.title}</h4>
+              </div>
 
-            <div className="h-100 d-flex flex-column justify-content-between">
-              <p>{blog.body}</p>
-              <ButtonCircle>▶</ButtonCircle>
-            </div>
-          </article>
-        ))}
+              <div className="h-100 d-flex flex-column justify-content-between">
+                <p>{blog.body}</p>
+                <ButtonCircle>▶</ButtonCircle>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
     </>
   );
