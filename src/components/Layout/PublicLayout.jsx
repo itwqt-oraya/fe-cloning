@@ -7,7 +7,7 @@ import { ButtonSolid } from "../Buttons";
 export default function PublicLayout() {
   return (
     <>
-      <div className="d-flex flex-column">
+      <div className="d-flex flex-column overflow-hidden">
         <NavBar>
           <NavHamburger />
           <NavLogo />

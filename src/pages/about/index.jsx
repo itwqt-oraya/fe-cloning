@@ -5,7 +5,7 @@ export default function index() {
   return (
     <>
       <AboutHero />
-      {/* <PostFeedHero /> */}
+      <PostFeedHero />
     </>
   );
 }

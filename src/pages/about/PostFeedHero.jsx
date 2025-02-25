@@ -1,31 +1,31 @@
 import React, { useState } from "react";
 import { HeroContainer, HeroCol } from "../../components/Hero";
-import { Nav, NavItem, NavLink, TabContent, TabPane } from "reactstrap";
+import { Nav, TabContent, TabPane } from "reactstrap";
 import { ButtonSolid, ButtonOutline } from "../../components/Buttons";
-
+import { PostMobile } from "../../components/PostFeed";
 const postFeedText = [
   {
     key: 1,
     buttonText: "Discover",
-    header: "Discover the stories that matter to you.",
+    header: `Discover the stories that <span>matter</span> to you.`,
     body: "Flip through the best stories on thousands of topics, all curated by Flipboard editors and experts. From global news to industry insights and local happenings, it’s your source for the stories that matter.",
   },
   {
     key: 2,
     buttonText: "Follow",
-    header: "Follow topics, magazines and people that inspire you.",
+    header: `Follow topics, magazines and people that <span>inspire</span> you.`,
     body: "Personalize your Flipboard around the things you care about. Follow the topics, Magazines or people sharing on Flipboard, Threads, Mastodon or Bluesky to get all the stories you care about in one place.",
   },
   {
     key: 3,
     buttonText: "Share",
-    header: "Share your passions with others.",
+    header: `Share your <span>passions</span> with others.`,
     body: "Collect favorite stories by saving them into your own Flipboard Magazines. Make your Magazines public to share insights and ideas with an ever-growing community of enthusiasts on Flipboard.",
   },
   {
     key: 4,
     buttonText: "Connect",
-    header: "Connect with enthusiasts like you.",
+    header: `Connect with <span>enthusiasts</span> like you.`,
     body: "Build your community by sharing stories with others on Flipboard. Personalize your profile, collect the stories into Flipboard Magazines, post comments and share ideas with people who share your passions.",
   },
 ];
@@ -35,8 +35,12 @@ export default function PostFeedHero() {
 
   return (
     <HeroContainer>
-      <HeroCol>
+      <HeroCol className={"d-none d-md-block"}>
         <img src="https://about.flipboard.com/wp-content/uploads/2022/12/Discover-Background-490x830.png" />
+      </HeroCol>
+
+      <HeroCol className={"d-lg-none"}>
+        <PostMobile />
       </HeroCol>
 
       <HeroCol>
@@ -50,7 +54,10 @@ export default function PostFeedHero() {
           <TabContent activeTab={activeTab}>
             {postFeedText.map((item) => (
               <TabPane tabId={item.key} key={item.key}>
-                <h2 className="fw-bold">{item.header}</h2>
+                <h1
+                  className="fw-bolder display-3 text-uppercase"
+                  dangerouslySetInnerHTML={{ __html: item.header }}
+                />
                 <p>{item.body}</p>
               </TabPane>
             ))}

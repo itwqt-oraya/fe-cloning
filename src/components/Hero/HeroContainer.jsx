@@ -13,7 +13,7 @@ HeroContainer.propTypes = {
 export default function HeroContainer({ children, bgColor }) {
   return (
     <section
-      className={classNames("row justify-content-end py-5", {
+      className={classNames("row justify-content-end py-3", {
         [styles["hero-bg--accent"]]: bgColor === "accent",
         [styles["hero-bg--primaryDark"]]: bgColor === "primaryDark",
       })}
