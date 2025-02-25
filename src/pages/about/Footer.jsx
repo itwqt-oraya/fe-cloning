@@ -1,24 +1,18 @@
 import React from "react";
-import { HeroContainer } from "../../components/Hero";
 import {
   FooterActiveLink,
   FooterInactiveLink,
   FooterSubLink,
   FooterContainer,
   FooterButtons,
+  FooterImage,
 } from "../../components/Footer";
 export default function Footer() {
   return (
     <FooterContainer>
-      <div>
-        <img
-          style={{ width: "17vw" }}
-          src="https://about.flipboard.com/wp-content/themes/flipboard/dist/img/badge-white.svg"
-        />
-      </div>
-
+      <FooterImage />
       <div className="d-flex flex-column gap-3">
-        <div className="d-flex flex-column flex-lg-row gap-3">
+        <div className="d-flex flex-column flex-lg-coloumn gap-4 gap-lg-1 mb-3">
           <FooterActiveLink />
           <FooterInactiveLink />
         </div>

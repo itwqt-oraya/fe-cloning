@@ -3,7 +3,7 @@ import styles from "./footer.module.scss";
 import classNames from "classnames";
 export default function FooterInactiveLink() {
   return (
-    <div className="col d-flex flex-column">
+    <div className="col d-flex flex-column flex-lg-row gap-lg-3">
       {navItems.map((item, index) => (
         <a
           key={index}

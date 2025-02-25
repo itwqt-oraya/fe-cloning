@@ -9,7 +9,7 @@ export default function FooterContainer({ children }) {
         styles["footer-container"]
       )}
     >
-      <div className="p-5 gap-4 d-flex flex-column flex-lg-row flex-lg-row-reverse justify-content-start justify-content-lg-between align-items-start">
+      <div className="p-5 gap-4 d-flex flex-column flex-lg-row justify-content-start justify-content-lg-center align-items-start">
         {children}
       </div>
     </footer>
