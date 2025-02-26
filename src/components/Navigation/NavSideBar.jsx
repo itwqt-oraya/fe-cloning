@@ -13,11 +13,12 @@ export default function NavSideBar(props) {
       <Offcanvas
         className={classNames(styles["nav-sidebar"], "d-lg-none")}
         backdrop={false}
+        scrollable={false}
         direction="end"
         isOpen={open}
         toggle={toggle}
       >
-        <div className="d-flex flex-column justify-content-between h-100">
+        <div className="d-flex flex-column justify-content-between h-100 mt-5">
           <NavSideLinks />
 
           <div className={styles["nav-sideimg"]}>

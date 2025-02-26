@@ -76,7 +76,7 @@ export default function NavSideLinks() {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-4 mt-3">
       <nav className="d-flex row gap-2">
         {navItems.map((item) => (
           <div key={item.index}>
