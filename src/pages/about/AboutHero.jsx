@@ -14,7 +14,7 @@ export default function AboutHero() {
   return (
     <>
       <HeroContainer className={"py-5 justify-content-end"} bgColor="accent">
-        <HeroCol className={"p-5"}>
+        <HeroCol className={"p-5 mt-5"}>
           <HeroHeaderText>
             The first and only <span>social</span> magazine.
           </HeroHeaderText>

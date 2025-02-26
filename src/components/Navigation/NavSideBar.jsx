@@ -16,8 +16,9 @@ export default function NavSideBar(props) {
         direction="end"
         isOpen={open}
         toggle={toggle}
+        scrollable={false}
       >
-        <div className="d-flex flex-column justify-content-between h-100">
+        <div className="d-flex flex-column justify-content-between h-100 mt-5">
           <NavSideLinks />
 
           <div className={styles["nav-sideimg"]}>
