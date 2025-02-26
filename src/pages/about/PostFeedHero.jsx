@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { HeroContainer, HeroCol } from "../../components/Hero";
 import { Nav, TabContent, TabPane } from "reactstrap";
-import { ButtonSolid, ButtonOutline } from "../../components/Buttons";
+import { Button } from "../../components/Buttons";
 import { PostMobile } from "../../components/PostFeed";
 
 export default function PostFeedHero() {
@@ -21,9 +21,9 @@ export default function PostFeedHero() {
         <HeroCol className="p-5 my-auto">
           <Nav>
             {postFeedText.map((item) => (
-              <ButtonOutline key={item.key}>
+              <Button variant="outline" key={item.key}>
                 <a onClick={() => setActiveTab(item.key)}>{item.buttonText}</a>
-              </ButtonOutline>
+              </Button>
             ))}
 
             <TabContent activeTab={activeTab}>
@@ -39,7 +39,9 @@ export default function PostFeedHero() {
             </TabContent>
           </Nav>
 
-          <ButtonSolid color={"blueDark"}>Dive Deeper</ButtonSolid>
+          <Button variant="solid" color={"blueDark"}>
+            Dive Deeper
+          </Button>
         </HeroCol>
       </HeroContainer>
     </>

@@ -3,12 +3,11 @@ import React from "react";
 import {
   HeroContainer,
   HeroHeaderText,
-  HeroSubHeaderText,
   HeroImageMap,
   HeroCol,
   HeroRelativeHeader,
 } from "../../components/Hero";
-import { ButtonSolid } from "../../components/Buttons";
+import { Button } from "../../components/Buttons";
 
 export default function AboutHero() {
   return (
@@ -18,7 +17,9 @@ export default function AboutHero() {
           <HeroHeaderText>
             The first and only <span>social</span> magazine.
           </HeroHeaderText>
-          <ButtonSolid color="blueLight">Read: Announcing Surf</ButtonSolid>
+          <Button variant="solid" color="blueLight">
+            Read: Announcing Surf
+          </Button>
         </HeroCol>
       </HeroContainer>
 

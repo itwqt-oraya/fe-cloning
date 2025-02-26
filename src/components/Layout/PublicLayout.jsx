@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet } from "react-router";
 
 import { NavBar, NavHamburger, NavLinks, NavLogo } from "../Navigation";
-import { ButtonSolid } from "../Buttons";
+import { Button } from "../Buttons";
 
 export default function PublicLayout() {
   return (
@@ -12,7 +12,9 @@ export default function PublicLayout() {
           <NavHamburger />
           <NavLogo />
           <NavLinks />
-          <ButtonSolid color={"red"}>Try Flipboard</ButtonSolid>
+          <Button variant="solid" color={"red"}>
+            Try Flipboard
+          </Button>
         </NavBar>
         <Outlet />
       </div>

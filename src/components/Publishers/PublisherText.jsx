@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonSolid } from "../Buttons";
+import { Button } from "../Buttons";
 
 export default function PublisherText() {
   return (
@@ -12,7 +12,9 @@ export default function PublisherText() {
         dangerouslySetInnerHTML={{ __html: publisherText.heading }}
       />
       <p className="text-muted">{publisherText.body}</p>
-      <ButtonSolid color={"purple"}>{publisherText.button}</ButtonSolid>
+      <Button variant="solid" color={"purple"}>
+        {publisherText.button}
+      </Button>
     </div>
   );
 }

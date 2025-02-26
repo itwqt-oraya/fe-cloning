@@ -1,9 +1,8 @@
 import classNames from "classnames";
 import styles from "./buttons.module.scss";
 import PropTypes from "prop-types";
-import { Button } from "reactstrap";
 
-ButtonSolid.propTypes = {
+Button.propTypes = {
   color: PropTypes.oneOf([
     "red",
     "blueLight",
@@ -12,25 +11,21 @@ ButtonSolid.propTypes = {
     "green",
     "gray",
   ]).isRequired,
+  variant: PropTypes.oneOf(["solid", "outline"]),
   children: PropTypes.node,
   props: PropTypes.shape({
     color: PropTypes.string.isRequired,
   }).isRequired,
 };
 
-export default function ButtonSolid({ children, color, ...props }) {
+export default function Button({ children, color, variant }) {
   return (
     <Button
       className={classNames(
+        "fw-bold",
         styles["button"],
-        {
-          [styles["button--bg-red"]]: color === "red",
-          [styles["button--bg-blue-light"]]: color === "blueLight",
-          [styles["button--bg-blue-dark"]]: color === "blueDark",
-          [styles["button--bg-purple"]]: color === "purple",
-          [styles["button--bg-green"]]: color === "green",
-        },
-        "fw-bold"
+        styles[`button--bg-${color}`],
+        styles[`button--${variant}`]
       )}
     >
       {children}

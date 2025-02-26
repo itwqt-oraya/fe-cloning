@@ -31,6 +31,16 @@
   display: flex;
 }
 
+.button--solid {
+  padding: 0.75em 1.15em;
+  border: 2px solid #cccccc;
+  color: #b2b2b2;
+  margin-right: 0.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0.25em;
+}
+
 .button--outline {
   background-color: transparent;
   padding: 0.75em 1.15em;
