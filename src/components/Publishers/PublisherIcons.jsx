@@ -21,7 +21,7 @@ export default function PublisherIcons() {
     <div className="p-5">
       <div
         className={classNames(
-          "d-flex gap-3 mb-2",
+          "d-flex align-items-center gap-3 mb-2",
           styles["publisher--svg-container"]
         )}
       >
@@ -54,7 +54,7 @@ export default function PublisherIcons() {
 
       <div
         className={classNames(
-          "d-flex gap-3 mb-2 ms-5",
+          "d-flex gap-3 mb-2 justify-content-center ms-5",
           styles["publisher--svg-container"]
         )}
       >

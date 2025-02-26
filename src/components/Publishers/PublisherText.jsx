@@ -3,7 +3,7 @@ import { ButtonSolid } from "../Buttons";
 
 export default function PublisherText() {
   return (
-    <div className="p-5 w-100">
+    <div className="p-5">
       <h5 className="text-uppercase fw-bold text-muted">
         {publisherText.subheading}
       </h5>
