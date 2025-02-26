@@ -22,6 +22,9 @@ $darkPrimary: #262626;
     --darkPrimary: #262626;
 }
 
-.textha {
-    color: burlywood;
+.text-special-blueDark span {
+    color: var(--blueDark);
+}
+.text-special-purple span {
+    color: var(--purple);
 }

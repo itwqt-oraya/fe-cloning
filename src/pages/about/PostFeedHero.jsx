@@ -30,7 +30,7 @@ export default function PostFeedHero() {
               {postFeedText.map((item) => (
                 <TabPane tabId={item.key} key={item.key}>
                   <h1
-                    className="fw-bolder display-3 text-uppercase"
+                    className="fw-bolder display-3 text-uppercase text-special-blueDark"
                     dangerouslySetInnerHTML={{ __html: item.header }}
                   />
                   <p>{item.body}</p>
@@ -39,7 +39,7 @@ export default function PostFeedHero() {
             </TabContent>
           </Nav>
 
-          <ButtonSolid color={"purple"}>Dive Deeper</ButtonSolid>
+          <ButtonSolid color={"blueDark"}>Dive Deeper</ButtonSolid>
         </HeroCol>
       </HeroContainer>
     </>
@@ -68,7 +68,7 @@ const postFeedText = [
   {
     key: 4,
     buttonText: "Connect",
-    header: `Connect with <span>enthusiasts</span> like you.`,
+    header: `Connect with <spanc>enthusiasts</spanc> like you.`,
     body: "Build your community by sharing stories with others on Flipboard. Personalize your profile, collect the stories into Flipboard Magazines, post comments and share ideas with people who share your passions.",
   },
 ];
