@@ -70,7 +70,7 @@ const postFeedText = [
   {
     key: 4,
     buttonText: "Connect",
-    header: `Connect with <spanc>enthusiasts</spanc> like you.`,
+    header: `Connect with <span>enthusiasts</span> like you.`,
     body: "Build your community by sharing stories with others on Flipboard. Personalize your profile, collect the stories into Flipboard Magazines, post comments and share ideas with people who share your passions.",
   },
 ];
