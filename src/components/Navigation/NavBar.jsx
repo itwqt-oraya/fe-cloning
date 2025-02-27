@@ -7,11 +7,11 @@ export default function NavBar({ children }) {
   return (
     <Navbar
       fixed="top"
-      className={classNames(styles["nav-bar"], "border-bottom")}
+      full="true"
+      container={false}
+      className={classNames(styles["nav-bar"], "p-0")}
     >
-      <div className="d-flex align-items-center justify-content-lg-around p-2 justify-content-between w-100 mx-auto gap-5">
-        {children}
-      </div>
+      <div className="w-100 mx-auto">{children}</div>
     </Navbar>
   );
 }

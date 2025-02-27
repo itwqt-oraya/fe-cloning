@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
 import styles from "./post.module.scss";
 import classNames from "classnames";
 
 export default function PostMobile({ mobileIndex }) {
-  const position = 0;
+  const position = mobileIndex == 0 ? 0 : (mobileIndex - 1) * -100;
+
   return (
     <div className={classNames("p-2", styles["post--mobile-container"])}>
       <div
@@ -17,9 +18,7 @@ export default function PostMobile({ mobileIndex }) {
             <div
               key={screen.key}
               style={{
-                transform: `translate3d(${
-                  mobileIndex == 1 ? 0 : (mobileIndex - 1) * -100
-                }%,0px,0px)`,
+                transform: `translate3d(${position}%,0px,0px)`,
                 transition: "transform 0.2s",
               }}
             >
@@ -30,10 +29,9 @@ export default function PostMobile({ mobileIndex }) {
             </div>
           ) : (
             <div
+              key={screen.key}
               style={{
-                transform: `translate3d(${
-                  mobileIndex == 1 ? 0 : (mobileIndex - 1) * -100
-                }%,0px,0px)`,
+                transform: `translate3d(${position}%,0px,0px)`,
                 transition: "transform 0.2s",
               }}
             >
@@ -43,7 +41,6 @@ export default function PostMobile({ mobileIndex }) {
                   styles["post--mobile-image-muted"]
                 )}
                 src={screen.imgUrl}
-                key={screen.key}
               />
             </div>
           );
