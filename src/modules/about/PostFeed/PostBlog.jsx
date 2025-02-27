@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./post.module.scss";
 import classNames from "classnames";
-import { ButtonCircle } from "../Buttons";
+import { ButtonCircle } from "@components/Buttons";
 export default function PostBlog() {
   return (
     <>

@@ -10,8 +10,12 @@ export default function FooterButtons() {
       <ButtonImage>
         <img src="https://about.flipboard.com/wp-content/themes/flipboard/dist/img/google-play.png" />
       </ButtonImage>
-      <Button variant="outline">Newsletter Sign Up</Button>
-      <Button variant="outline">Select Language</Button>
+      <Button variant="outline" color="red">
+        Newsletter Sign Up
+      </Button>
+      <Button variant="outline" color="red">
+        Select Language
+      </Button>
     </div>
   );
 }

@@ -1,10 +1,9 @@
 import React from "react";
 import AboutHero from "./AboutHero";
-import PostFeedHero from "./PostFeedHero";
-import PostFeedBlog from "./PostFeedBlog";
-import Footer from "./Footer";
+import { PostFeedHero, PostFeedBlog } from "./post-feed";
 import Publishers from "./Publishers";
 import Device from "./Device";
+
 export default function index() {
   return (
     <>
@@ -13,7 +12,6 @@ export default function index() {
       <Publishers />
       <Device />
       <PostFeedBlog />
-      <Footer />
     </>
   );
 }

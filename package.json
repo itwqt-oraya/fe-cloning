@@ -33,14 +33,6 @@
     "globals": "^15.14.0",
     "sass": "^1.85.0",
     "vite": "^6.1.0"
-  },
-  "baseUrl": "./src",
-  "paths": {
-    "@assets/*": [
-      "assets/*"
-    ],
-    "@components/*": [
-      "components/*"
-    ]
   }
 }
+

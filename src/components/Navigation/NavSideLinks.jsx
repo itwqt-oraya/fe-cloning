@@ -1,13 +1,14 @@
 import styles from "./navigation.module.scss";
 import "../../styles/main.scss";
 
+import classNames from "classnames";
+
 import React, { useState } from "react";
 import { Link } from "react-router";
 import { Collapse } from "reactstrap";
-import { ButtonHamburger } from "../Buttons";
+import { ButtonHamburger } from "@components/Buttons";
 import { FaChevronRight, FaChevronDown } from "react-icons/fa6";
-import classNames from "classnames";
-import index from "../../pages/about";
+
 const navItems = [
   {
     index: 0,

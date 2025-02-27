@@ -1,5 +1,5 @@
 import React from "react";
-import { DeviceImage, DeviceText } from "../../components/Device";
+import { DeviceImage, DeviceText } from "@modules/about/Device";
 
 export default function Device() {
   return (

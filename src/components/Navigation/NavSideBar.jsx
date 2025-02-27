@@ -12,7 +12,6 @@ export default function NavSideBar(props) {
     <div className={classNames(styles["nav-sidebar--container"], "d-lg-none")}>
       <Offcanvas
         className={classNames(styles["nav-sidebar"], "d-lg-none")}
-        backdrop={false}
         direction="end"
         isOpen={open}
         toggle={toggle}

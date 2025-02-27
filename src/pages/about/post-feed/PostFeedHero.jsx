@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { HeroContainer, HeroCol } from "../../components/Hero";
+import { HeroContainer, HeroCol } from "@components/Hero";
 import { Nav, TabContent, TabPane } from "reactstrap";
-import { Button } from "../../components/Buttons";
-import { PostMobile } from "../../components/PostFeed";
+import { Button } from "@components/Buttons";
+import { PostMobile } from "@modules/about/PostFeed";
 
 export default function PostFeedHero() {
   const [activeTab, setActiveTab] = useState(1);
@@ -15,7 +15,7 @@ export default function PostFeedHero() {
         </HeroCol>
 
         <HeroCol className={"d-lg-none"}>
-          <PostMobile />
+          <PostMobile mobileIndex={activeTab} />
         </HeroCol>
 
         <HeroCol className="p-5 my-auto">

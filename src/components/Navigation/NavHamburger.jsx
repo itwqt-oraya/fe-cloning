@@ -3,14 +3,14 @@ import styles from "./navigation.module.scss";
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa6";
 import NavSideBar from "./NavSideBar";
-import { ButtonHamburger } from "../Buttons";
+import { ButtonHamburger } from "@components/Buttons";
 
-export default function NavHamburger() {
+export default function NavHamburger({ className }) {
   const [open, setOpen] = useState(false);
 
   return (
     <>
-      <div className="d-flex align-items-center gap-2">
+      <div className={`d-flex align-items-center gap-2 ${className}`}>
         <ButtonHamburger onClick={() => setOpen(!open)}>
           <FaBars />
         </ButtonHamburger>

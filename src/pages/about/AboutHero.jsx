@@ -6,8 +6,8 @@ import {
   HeroImageMap,
   HeroCol,
   HeroRelativeHeader,
-} from "../../components/Hero";
-import { Button } from "../../components/Buttons";
+} from "@/components/Hero";
+import { Button } from "@/components/Buttons";
 
 export default function AboutHero() {
   return (

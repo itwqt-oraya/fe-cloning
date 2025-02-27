@@ -1,8 +1,12 @@
-.post-image--container {
+.post--mobile-image-container {
     position: relative;
     border: 5px solid #000;
     border-radius: 25px;
-    width: 60%;
+    width: 70vw;
+}
+
+.post--mobile-image-muted {
+    opacity: 0.2;
 }
 
 .post-container {

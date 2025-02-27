@@ -20,15 +20,15 @@ Button.propTypes = {
 
 export default function Button({ children, color, variant }) {
   return (
-    <Button
+    <button
       className={classNames(
-        "fw-bold",
+        "rounded",
         styles["button"],
         styles[`button--bg-${color}`],
         styles[`button--${variant}`]
       )}
     >
       {children}
-    </Button>
+    </button>
   );
 }

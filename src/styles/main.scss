@@ -22,6 +22,10 @@ $darkPrimary: #262626;
     --darkPrimary: #262626;
 }
 
+* {
+    font-family: "Roboto";
+}
+
 .text-special-blueDark span {
     color: var(--blueDark);
 }
