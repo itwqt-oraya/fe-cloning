@@ -1,5 +1,5 @@
 import React from "react";
-import { PublisherIcons, PublisherText } from "../../components/Publishers";
+import { PublisherIcons, PublisherText } from "@modules/about/Publishers";
 
 export default function Publishers() {
   return (

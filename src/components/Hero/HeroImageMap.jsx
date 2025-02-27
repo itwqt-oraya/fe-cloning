@@ -15,8 +15,8 @@ export default function HeroImageMap() {
   }, []);
 
   const getRandomPosition = () => {
-    const x = Math.floor(Math.random() * 75) + "vw";
-    const y = Math.floor(Math.random() * 30) + "rem";
+    const x = Math.floor(Math.random() * 100) + "vw";
+    const y = Math.floor(Math.random() * 30) + "em";
     return { x, y };
   };
 

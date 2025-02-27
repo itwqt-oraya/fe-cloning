@@ -53,10 +53,40 @@
     position: absolute;
     overflow: hidden;
 }
+.hero--mobile-image-container {
+    position: sticky;
+    height: auto;
+    min-width: 300px;
+    width: 25%;
+    left: 25%;
+    margin-top: 3%;
+    // transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.hero--mobile-image {
+    position: absolute;
+    border: 5px solid #000;
+    border-radius: 25px;
+    min-width: 300px;
+    width: 25%;
+    z-index: 1000;
+}
+
+// for phones
+@media (max-width: 425.98px) { 
+    .hero--mobile-image-container {
+        margin: 0 auto;
+    }
+ }
 
 // media query for devices lower than md
 @media (max-width: 767.98px) { 
     .hero-bg--imageContainer {
         left: 0;
     }
+
+    // .hero--mobile-image-container {
+    //     top: 60vh;
+    // }
  }

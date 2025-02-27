@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../publishers.module.scss";
 export default function NatGeo() {
   return (
     <svg
@@ -9,7 +8,6 @@ export default function NatGeo() {
       y="0px"
       viewBox="0 0 27.3 39.2"
       xmlSpace="preserve"
-      className={styles["publisher--svg-icon"]}
     >
       <path
         fill="#FFD700"

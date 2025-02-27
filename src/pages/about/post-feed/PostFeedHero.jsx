@@ -10,7 +10,7 @@ export default function PostFeedHero() {
   return (
     <>
       <HeroContainer>
-        <HeroCol className={"d-none d-md-block"}>
+        <HeroCol className={"d-none d-lg-block"}>
           <img src="https://about.flipboard.com/wp-content/uploads/2022/12/Discover-Background-490x830.png" />
         </HeroCol>
 

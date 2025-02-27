@@ -14,7 +14,7 @@ import {
   Substack,
   Traveller,
   Youtube,
-} from "./Icons";
+} from "@icons/Icons";
 
 export default function PublisherIcons() {
   return (
