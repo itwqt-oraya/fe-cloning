@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Outlet } from "react-router";
 
 import {
@@ -14,6 +14,7 @@ import { Footer } from "@components/Footer";
 export default function PublicLayout() {
   const [hovering, setHovering] = useState(false);
   const [linkHovering, setLinkHovering] = useState("");
+
   return (
     <>
       <div className="d-flex flex-column overflow-hidden">

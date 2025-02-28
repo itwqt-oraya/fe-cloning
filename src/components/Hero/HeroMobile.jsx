@@ -11,7 +11,6 @@ export default function HeroMobile() {
         const scrollTop = window.scrollY;
         const maxScroll = parentDiv.offsetHeight - window.innerHeight + 100;
         const newTranslateY = Math.min(Math.max(scrollTop, 100), maxScroll);
-        console.log(maxScroll);
         setTranslateY(newTranslateY);
       }
     };

@@ -1,11 +1,11 @@
 import React from "react";
-import { PublisherIcons, PublisherText } from "@modules/about/Publishers";
+import { DeviceImage, DeviceText } from "@modules/about";
 
-export default function Publishers() {
+export default function AboutDevice() {
   return (
     <div className="d-flex flex-lg-row flex-column flex-column-reverse justify-content-center align-items-center gap-3">
-      <PublisherText />
-      <PublisherIcons />
+      <DeviceText />
+      <DeviceImage />
     </div>
   );
 }

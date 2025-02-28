@@ -1,7 +1,7 @@
 import React from "react";
 import { HeroContainer } from "@components/Hero";
-import { PostBlog } from "@modules/about/PostFeed";
-export default function PostFeedBlog() {
+import { PostBlog } from "@modules/about/";
+export default function AboutPostBlogFeed() {
   return (
     <HeroContainer bgColor={"primaryDark"}>
       <PostBlog />

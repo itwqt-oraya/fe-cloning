@@ -1,8 +1,12 @@
 import React from "react";
-import AboutHero from "./AboutHero";
-import { PostFeedHero, PostFeedBlog } from "./post-feed";
-import Publishers from "./Publishers";
-import Device from "./Device";
+
+import {
+  AboutHero,
+  AboutPublishers,
+  AboutDevice,
+  AboutPostBlogFeed,
+  AboutPostBlogHero,
+} from "@modules/about";
 import { HeroMobile } from "@components/Hero/";
 
 export default function index() {
@@ -11,12 +15,12 @@ export default function index() {
       <main id="limitScroll">
         <HeroMobile />
         <AboutHero />
-        <PostFeedHero />
+        <AboutPostBlogHero />
       </main>
 
-      <Publishers />
-      <Device />
-      <PostFeedBlog />
+      <AboutPublishers />
+      <AboutDevice />
+      <AboutPostBlogFeed />
     </>
   );
 }

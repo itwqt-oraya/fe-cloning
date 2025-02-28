@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { HeroContainer, HeroCol } from "@components/Hero";
 import { Nav, TabContent, TabPane } from "reactstrap";
 import { Button } from "@components/Buttons";
-import { PostMobile } from "@modules/about/PostFeed";
+import { PostMobile } from "@modules/about/";
 
-export default function PostFeedHero() {
+export default function AboutPostBlogHero() {
   const [activeTab, setActiveTab] = useState(1);
 
   return (

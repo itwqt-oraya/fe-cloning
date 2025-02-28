@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../../../components/Buttons";
+import { Button } from "../../components/Buttons";
 
 export default function PublisherText() {
   return (
