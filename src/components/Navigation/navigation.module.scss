@@ -1,0 +1,56 @@
+.nav-bar {
+  z-index: 9999;
+  background-color: #fff;
+  width: 100%;
+}
+
+.nav-hover {
+  background-color: rgb(229, 229, 229);
+}
+
+.nav-link {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--red);
+}
+
+.nav--logo-small {
+  width: 32px;
+  height: auto;
+}
+
+.nav-sidelink {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-sideimg {
+  min-height: 400px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.nav-sidelink--subtext {
+  font-size: 1.25rem;
+  color: var(--primary);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.text--state-inactive {
+  color: #999999;
+}

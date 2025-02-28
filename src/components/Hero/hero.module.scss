@@ -1,0 +1,92 @@
+.hero-text--header {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero-text--subheader {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero-text--relative {
+    position: relative;
+    top: -45%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.hero-bg--accent {
+    background-color: var(--accentColor);
+    color: #fff;
+    span {
+        color: #9fc4e3;
+    }
+}
+
+.hero-bg--primaryDark {
+    background-color: var(--darkPrimary);
+}
+
+.hero-bg--imageContainer {
+    position: relative;
+    width: 100vw !important;
+    left: -100%;
+    min-height: 400px;
+}
+
+.hero-bg--imageContent {
+    position: relative;
+}
+
+.hero-bg--image {
+    width: 6rem;
+    height: 6rem;
+    border: #9fc4e3 2px solid;
+    border-radius: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    position: absolute;
+    overflow: hidden;
+}
+.hero--mobile-image-container {
+    position: sticky;
+    height: auto;
+    min-width: 300px;
+    width: 25%;
+    left: 25%;
+    margin-top: 3%;
+    // transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.hero--mobile-image {
+    position: absolute;
+    border: 5px solid #000;
+    border-radius: 25px;
+    min-width: 300px;
+    width: 25%;
+    z-index: 1000;
+}
+
+// for phones
+@media (max-width: 425.98px) { 
+    .hero--mobile-image-container {
+        margin: 0 auto;
+    }
+ }
+
+// media query for devices lower than md
+@media (max-width: 767.98px) { 
+    .hero-bg--imageContainer {
+        left: 0;
+    }
+
+    // .hero--mobile-image-container {
+    //     top: 60vh;
+    // }
+ }

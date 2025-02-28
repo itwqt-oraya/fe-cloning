@@ -1,1 +1,37 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
+
+// text colors
+$red: #f52828;
+$blueLight: #cee1f0;
+$blueDark: #607990; 
+$purple: #6f6c94;
+$green: #607B6B;
+
+// bg colors
+$accentColor: #404e5b;
+$darkPrimary: #262626;
+
+:root {
+    --red: #f52828;
+    --blueLight: #cee1f0;
+    --blueDark: #607990; 
+    --purple: #6f6c94;
+    --green: #607B6B;
+    --primary: #000;
+    --accentColor: #404e5b;
+    --darkPrimary: #262626;
+}
+
+* {
+    font-family: "Roboto";
+}
+
+.text-special-blueDark span {
+    color: var(--blueDark);
+}
+.text-special-purple span {
+    color: var(--purple);
+}
+.text-special-green span {
+    color: var(--green);
+}

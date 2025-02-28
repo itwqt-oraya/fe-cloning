@@ -1,0 +1,25 @@
+.footer-container {
+    background-color: var(--darkPrimary);
+}
+.footer--link-active {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #fff;
+}
+.footer--link-inactive {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #7f7f7f;
+}
+
+.footer--link-sublink {
+    font-size: 1em;
+    color: #fff;
+}
+.footer--link-active:hover, .footer--link-inactive:hover, .footer--link-sublink:hover {
+    color: var(--red);
+}
+
+.footer--image {
+    width: 9%;
+}

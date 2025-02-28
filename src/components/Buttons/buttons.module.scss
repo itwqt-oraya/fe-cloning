@@ -1,0 +1,84 @@
+.button {
+    border: none;
+    padding: 0.75em 1.15em;
+}
+
+.button--bg-red {
+  background-color: var(--red);
+}
+
+.button--bg-blueLight {
+    background-color: var(--blueLight);
+    color: var(--blueDark) !important;
+}
+
+.button--bg-blueDark {
+    background-color: var(--blueDark);
+}
+
+.button--bg-purple {
+  background-color: var(--purple);
+}
+
+.button--bg-green {
+ background-color: var(--green);
+}
+
+.button--hamburger {
+  background: none;
+  padding: 0;
+  font-size: 2em;
+  display: flex;
+}
+
+.button--solid {
+  padding: 0.75em 1.15em;
+  color: #fff;
+  margin-right: 0.5em;
+  font-weight: 600;
+  margin-bottom: 0.25em;
+}
+
+.button--outline {
+  background-color: transparent;
+  padding: 0.75em 1.15em;
+  border: 2px solid #cccccc;
+  color: #b2b2b2;
+  margin-right: 0.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0.25em;
+}
+
+.button--outline:hover {
+  border-color: var(--darkPrimary);
+  transition: border-color 1s ease;
+}
+
+.button--circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 1.25em;
+  width: 2em;
+  height: 2em;
+  border: 1px solid #cccccc;
+  border-radius: 100%;
+  color: #b2b2b2;
+  font-weight: 700;
+}
+
+.button--circle:hover {
+  border-color: var(--darkPrimary);
+  transition: border-color 1s ease;
+}
+
+.button--image {
+  background-color: transparent;
+  border: none;
+  color: #b2b2b2;
+   img {
+    height: 3em;
+   }
+}
