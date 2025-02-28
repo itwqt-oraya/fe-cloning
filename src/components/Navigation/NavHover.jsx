@@ -3,7 +3,7 @@ import styles from "./navigation.module.scss";
 import classNames from "classnames";
 
 export default function NavHover({ linkHovering, onHoverChange }) {
-  const handleMouseExit = (title) => {
+  const handleMouseExit = () => {
     onHoverChange();
   };
   return (

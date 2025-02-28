@@ -3,20 +3,30 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import { BrowserRouter, Routes, Route } from "react-router";
 
-import { PublicLayout } from "./components/Layout";
-import About from "./pages/about";
+import About from "@pages/about";
+
+import { PublicLayout } from "@components/Layout";
+import { LoaderProvider } from "@context";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<PublicLayout />}>
-          <Route index element={<About />} />
-        </Route>
+    <LoaderProvider>
+      <BrowserRouter>
+        <RouteMap />
+      </BrowserRouter>
+    </LoaderProvider>
+  );
+}
 
-        <Route path="*" element={<p>Not found.</p>} />
-      </Routes>
-    </BrowserRouter>
+function RouteMap() {
+  return (
+    <Routes>
+      <Route path="/" element={<PublicLayout />}>
+        <Route index element={<About />} />
+      </Route>
+
+      <Route path="*" element={<p>Not found.</p>} />
+    </Routes>
   );
 }
 
