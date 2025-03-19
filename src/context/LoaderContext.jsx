@@ -1,8 +1,12 @@
-import React, { useState, createContext, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { LoadingScreen } from "@components/Loader";
 import axios from "axios";
+import PropTypes from "prop-types";
+import { LoaderContext } from "@context";
 
-export const LoaderContext = createContext();
+LoaderProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default function LoaderProvider({ children }) {
   const [loading, setLoading] = useState(true);

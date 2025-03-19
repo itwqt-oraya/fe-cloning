@@ -1,7 +1,11 @@
-import React from "react";
 import styles from "./navigation.module.scss";
 import classNames from "classnames";
 import { Navbar } from "reactstrap";
+import PropTypes from "prop-types";
+
+NavBar.propTypes = {
+  children: PropTypes.node,
+};
 
 export default function NavBar({ children }) {
   return (

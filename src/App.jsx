@@ -1,7 +1,6 @@
 import "./styles/main.scss";
 import "bootstrap/dist/css/bootstrap.css";
 
-import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router";
 import { LoaderProvider } from "@context";
 import About from "@pages/about";

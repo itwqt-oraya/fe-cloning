@@ -1,4 +1,3 @@
-import React from "react";
 import { HeroContainer } from "@components/Hero";
 import { PostBlog } from "@modules/about/";
 export default function AboutPostBlogFeed() {

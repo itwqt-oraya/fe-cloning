@@ -1,6 +1,11 @@
 import styles from "./navigation.module.scss";
-import React from "react";
 import { Link } from "react-router";
+import PropTypes from "prop-types";
+
+NavLinks.propTypes = {
+  onHoverChange: PropTypes.func,
+  setLinkHovering: PropTypes.func,
+};
 
 const navItems = [
   {
@@ -29,6 +34,7 @@ const navItems = [
     title: "blogs",
   },
 ];
+
 export default function NavLinks({ onHoverChange, setLinkHovering }) {
   const handleMouseEnter = (title) => {
     onHoverChange();

@@ -1,6 +1,10 @@
-import React from "react";
 import styles from "./post.module.scss";
 import classNames from "classnames";
+import PropTypes from "prop-types";
+
+PostMobile.propTypes = {
+  mobileIndex: PropTypes.number,
+};
 
 export default function PostMobile({ mobileIndex }) {
   const position = mobileIndex == 0 ? 0 : (mobileIndex - 1) * -100;

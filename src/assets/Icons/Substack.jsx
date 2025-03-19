@@ -1,4 +1,3 @@
-import React from "react";
 export default function Substack() {
   return (
     <svg role="img" viewBox="0 0 24 24">

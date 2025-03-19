@@ -1,4 +1,3 @@
-import React from "react";
 import { PublisherIcons, PublisherText } from "@modules/about";
 
 export default function AboutPublishers() {

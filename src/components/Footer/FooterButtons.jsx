@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, ButtonImage } from "../Buttons";
 export default function FooterButtons() {
   return (
