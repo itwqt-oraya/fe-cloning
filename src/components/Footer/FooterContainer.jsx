@@ -1,6 +1,11 @@
-import React from "react";
 import styles from "./footer.module.scss";
 import classNames from "classnames";
+import PropTypes from "prop-types";
+
+FooterContainer.propTypes = {
+  children: PropTypes.node,
+};
+
 export default function FooterContainer({ children }) {
   return (
     <footer

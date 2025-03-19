@@ -1,6 +1,11 @@
-import React from "react";
 import styles from "./navigation.module.scss";
 import classNames from "classnames";
+import PropTypes from "prop-types";
+
+NavHover.propTypes = {
+  linkHovering: PropTypes.string,
+  onHoverChange: PropTypes.func,
+};
 
 export default function NavHover({ linkHovering, onHoverChange }) {
   const handleMouseExit = () => {

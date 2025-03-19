@@ -3,7 +3,7 @@ import "../../styles/main.scss";
 
 import classNames from "classnames";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router";
 import { Collapse } from "reactstrap";
 import { ButtonHamburger } from "@components/Buttons";

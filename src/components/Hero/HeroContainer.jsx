@@ -1,13 +1,11 @@
-import React from "react";
 import styles from "./hero.module.scss";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
 HeroContainer.propTypes = {
   children: PropTypes.node.isRequired,
-  props: PropTypes.shape({
-    bgColor: PropTypes.oneOf(["accent", "primaryDark"]).isRequired,
-  }).isRequired,
+  bgColor: PropTypes.oneOf(["accent", "primaryDark"]).isRequired,
+  className: PropTypes.string,
 };
 
 export default function HeroContainer({ children, bgColor, className }) {

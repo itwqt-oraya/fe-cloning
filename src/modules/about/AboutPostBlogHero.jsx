@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { HeroContainer, HeroCol } from "@components/Hero";
 import { Nav, TabContent, TabPane } from "reactstrap";
 import { Button } from "@components/Buttons";

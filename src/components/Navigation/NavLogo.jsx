@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function NavLogo() {
   return (
     <div className="d-none d-md-block">

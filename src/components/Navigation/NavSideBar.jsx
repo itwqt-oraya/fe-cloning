@@ -1,9 +1,14 @@
 import styles from "./navigation.module.scss";
 
-import React from "react";
 import classNames from "classnames";
 import { Offcanvas } from "reactstrap";
 import NavSideLinks from "./NavSideLinks";
+import PropTypes from "prop-types";
+
+NavSideBar.propTypes = {
+  open: PropTypes.bool,
+  setOpen: PropTypes.func,
+};
 
 export default function NavSideBar(props) {
   const { open, setOpen } = props;

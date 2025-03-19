@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./device.module.scss";
 export default function PublisherIcons() {
   return (

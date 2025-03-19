@@ -1,6 +1,10 @@
 import styles from "./hero.module.scss";
 import classNames from "classnames";
-import React from "react";
+import PropTypes from "prop-types";
+
+HeroHeaderText.propTypes = {
+  children: PropTypes.node,
+};
 
 export default function HeroHeaderText({ children }) {
   return (

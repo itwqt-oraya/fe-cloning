@@ -1,4 +1,3 @@
-import React from "react";
 export default function Medium() {
   return (
     <svg id="svg5" viewBox="0 0 493.32 280.17">

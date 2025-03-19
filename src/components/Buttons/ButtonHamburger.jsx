@@ -1,6 +1,11 @@
 import styles from "./buttons.module.scss";
 import classNames from "classnames";
-import React from "react";
+import PropTypes from "prop-types";
+
+ButtonHamburger.propTypes = {
+  children: PropTypes.node,
+  onClick: PropTypes.func.isRequired,
+};
 
 export default function ButtonHamburger({ children, onClick }) {
   const handleClick = () => {

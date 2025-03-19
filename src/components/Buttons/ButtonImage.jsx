@@ -1,6 +1,10 @@
-import React from "react";
 import styles from "./buttons.module.scss";
 import classNames from "classnames";
+import PropTypes from "prop-types";
+
+ButtonImage.propTypes = {
+  children: PropTypes.node,
+};
 
 export default function ButtonImage({ children }) {
   return (

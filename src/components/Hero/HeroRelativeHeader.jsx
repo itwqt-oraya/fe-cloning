@@ -1,6 +1,10 @@
 import styles from "./hero.module.scss";
 import classNames from "classnames";
-import React from "react";
+import PropTypes from "prop-types";
+
+HeroRelativeHeader.propTypes = {
+  children: PropTypes.node,
+};
 
 export default function HeroRelativeHeader({ children }) {
   return (

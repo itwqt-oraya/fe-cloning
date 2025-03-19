@@ -1,9 +1,14 @@
 import styles from "./navigation.module.scss";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaBars } from "react-icons/fa6";
 import NavSideBar from "./NavSideBar";
 import { ButtonHamburger } from "@components/Buttons";
+import PropTypes from "prop-types";
+
+NavHamburger.propTypes = {
+  className: PropTypes.string,
+};
 
 export default function NavHamburger({ className }) {
   const [open, setOpen] = useState(false);

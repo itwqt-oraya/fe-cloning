@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./post.module.scss";
 import classNames from "classnames";
 import { ButtonCircle } from "@components/Buttons";

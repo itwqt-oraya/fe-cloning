@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import styles from "./hero.module.scss";
 import classNames from "classnames";
 export default function HeroMobile() {

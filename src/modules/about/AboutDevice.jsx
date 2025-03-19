@@ -1,4 +1,3 @@
-import React from "react";
 import { DeviceImage, DeviceText } from "@modules/about";
 
 export default function AboutDevice() {

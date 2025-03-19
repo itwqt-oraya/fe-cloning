@@ -1,4 +1,3 @@
-import React from "react";
 export default function ENews() {
   return (
     <svg id="Layer_1" data-name="Layer 1" viewBox="0 0 60 60">
