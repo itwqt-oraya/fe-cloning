@@ -6,7 +6,7 @@ export default function PublisherText() {
       <h5 className="text-uppercase fw-bold text-muted">
         {publisherText.subheading}
       </h5>
-      <h1
+      <h3
         className="text-uppercase fw-bold text-special-green"
         dangerouslySetInnerHTML={{ __html: publisherText.heading }}
       />

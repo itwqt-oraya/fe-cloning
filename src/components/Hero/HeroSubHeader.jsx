@@ -8,8 +8,8 @@ HeroSubHeaderText.propTypes = {
 
 export default function HeroSubHeaderText({ children }) {
   return (
-    <h1 className={classNames([styles["hero-text--subheader"], "fw-bold"])}>
+    <h2 className={classNames([styles["hero-text--subheader"], "fw-bold"])}>
       {children}
-    </h1>
+    </h2>
   );
 }

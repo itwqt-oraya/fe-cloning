@@ -23,6 +23,7 @@ export default function NavHamburger({ className }) {
           <img
             className={styles["nav--logo-small"]}
             src="https://about.flipboard.com/wp-content/themes/flipboard/dist/img/logomark.png"
+            alt="Flipboard Logo"
           />
         </div>
         {open && <NavSideBar open={open} setOpen={setOpen} />}

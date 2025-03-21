@@ -17,7 +17,7 @@ export default function HeroImageMap() {
           <img
             src={image}
             key={index}
-            alt="random"
+            alt="Image Map"
             className={styles["hero-bg--image"]}
             style={{
               left: `${getRandomPosition().x}`,

@@ -35,6 +35,7 @@ export default function HeroMobile() {
           className={classNames("", styles["hero--mobile-image"])}
           src={screen.imgUrl}
           key={screen.key}
+          alt="Mobile Screens"
         />
       ))}
     </section>

@@ -14,7 +14,7 @@ export default function NavSideBar(props) {
   const { open, setOpen } = props;
   const toggle = () => setOpen(!open);
   return (
-    <div className={classNames(styles["nav-sidebar--container"], "d-lg-none")}>
+    <nav className={classNames(styles["nav-sidebar--container"], "d-lg-none")}>
       <Offcanvas
         className={classNames(styles["nav-sidebar"], "d-lg-none")}
         direction="end"
@@ -27,12 +27,13 @@ export default function NavSideBar(props) {
 
           <div className={styles["nav-sideimg"]}>
             <img
+              alt="Flipboard - Android"
               className="w-100"
               src="https://about.flipboard.com/wp-content/uploads/2023/07/Flipboard-Andoird-custom-tabs-scaled.jpg"
             />
           </div>
         </div>
       </Offcanvas>
-    </div>
+    </nav>
   );
 }

@@ -35,7 +35,7 @@ export default function PostBlog() {
                   alt="Sample"
                   src={blog.imageUrl}
                 />
-                <h4>{blog.title}</h4>
+                <h3>{blog.title}</h3>
               </div>
 
               <div className="h-100 d-flex flex-column justify-content-between">

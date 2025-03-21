@@ -8,7 +8,7 @@ HeroRelativeHeader.propTypes = {
 
 export default function HeroRelativeHeader({ children }) {
   return (
-    <h1
+    <h3
       className={classNames([
         styles["hero-text--subheader"],
         styles["hero-text--relative"],
@@ -16,6 +16,6 @@ export default function HeroRelativeHeader({ children }) {
       ])}
     >
       {children}
-    </h1>
+    </h3>
   );
 }

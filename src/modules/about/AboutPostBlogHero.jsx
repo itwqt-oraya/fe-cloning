@@ -29,7 +29,7 @@ export default function AboutPostBlogHero() {
             <TabContent activeTab={activeTab}>
               {postFeedText.map((item) => (
                 <TabPane tabId={item.key} key={item.key}>
-                  <h1
+                  <h3
                     className="fw-bolder display-3 text-uppercase text-special-blueDark"
                     dangerouslySetInnerHTML={{ __html: item.header }}
                   />
